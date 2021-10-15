@@ -5,32 +5,307 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oana Nistor</title>
-    <link rel="stylesheet" href="style.css" />
+
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
     />
+
+    <script
+      src="https://kit.fontawesome.com/0dda3df3bc.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styletimeline.css" />
   </head>
   <body>
     <div class="main">
-      <div id="header">
+      <div class="header">
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a class="active" href="about.html">ABOUT</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
+        <hr />
       </div>
 
-      <div id="about-content">
-        <p class="animate__animated animate__fadeIn">
-          I am currently studying &#40;soon to be a graduate&#41; of The
-          Informal School of IT’s front-end web development program. With my
-          work ethic and my newly developed skills in building and developing
-          front-end interfaces, I’m looking forward to breaking into the tech
-          field. As an aspiring junior developer, my main goals are to continue
-          strengthening my skills in coding.
-        </p>
+      <div id="about-content"></div>
+
+      <div class="container">
+        <div>
+          <p class="about-me">
+            I freshly graduated from The Informal School of IT’s front-end web
+            development program. With my work ethic and my newly developed
+            skills in building and developing front-end interfaces, I’m looking
+            forward to breaking into the tech field. As an aspiring junior
+            developer, my main goals are to continue strengthening my skills in
+            coding.
+          </p>
+        </div>
+
+        <div class="page-header">
+          <h3 id="timeline">About me</h3>
+        </div>
+
+        <ul class="timeline">
+          <li>
+            <div class="timeline-badge">
+              <i class="fas fa-code"></i>
+            </div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h5 class="timeline-title">Scoala Informala de IT</h5>
+
+                <h6><strong>ReactJS</strong></h6>
+                <p>
+                  <small class="text-muted"
+                    ><i class="far fa-calendar-alt"></i> currently
+                    studying</small
+                  >
+                </p>
+              </div>
+
+              <div class="timeline-body">
+                <p>Curriculum:</p>
+                <ul>
+                  <li>React – Intro/JSX</li>
+                  <li>Components, props, state</li>
+                  <li>Lifecycle methods</li>
+                  <li>Routing in react</li>
+                  <li>Redux Basic</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-inverted">
+            <div class="timeline-badge warning">
+              <i class="fas fa-code"></i>
+            </div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h5 class="timeline-title">Scoala Informala de IT</h5>
+
+                <h6><strong>Front-End Web Developer</strong></h6>
+                <p>
+                  <small class="text-muted"
+                    ><i class="far fa-calendar-alt"></i> May 2021 - Oct
+                    2021</small
+                  >
+                </p>
+              </div>
+
+              <div class="timeline-body">
+                <ul>
+                  <li>
+                    Projects: creating a shopping list, a contact form, a
+                    phonebook, a weather app, a hotel webpage, my portfolio
+                    presentation page, and more.
+                  </li>
+                  <li>
+                    Graduation project: a fully functional and responsive online
+                    e-commerce platform using HTML, CSS, JavaScript, the AJAX
+                    method, JSON, API, local storage, Bootstrap, npm, Github and
+                    an online database.
+                  </li>
+                  <li>
+                    Using GitHub and Git throughout the course, helped gaining a
+                    good understanding of the tool.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline-badge danger">
+              <i class="fas fa-code"></i>
+            </div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h5 class="timeline-title">Scoala Informala de IT</h5>
+
+                <h6><strong>Intro in IT</strong></h6>
+                <p>
+                  <small class="text-muted"
+                    ><i class="far fa-calendar-alt"></i> Feb 2021 - Apr
+                    2021</small
+                  >
+                </p>
+              </div>
+
+              <div class="timeline-body">
+                <p>
+                  Two month introduction to IT course, with its main purpose to
+                  get familiarized with the major aspects of working in this
+                  field, as well as gaining basic knowledge of HTML, CSS, SQL
+                  and software testing.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-inverted">
+            <div class="timeline-badge info">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h5 class="timeline-title">
+                  "Lucian Blaga" University of Sibiu
+                </h5>
+              </div>
+
+              <div class="timeline-body">
+                <p>
+                  <small class="text-muted"
+                    ><i class="far fa-calendar-alt"></i> 2007 - 2009</small
+                  >
+                </p>
+                <p>
+                  Masters's degree, Strategies and policies of the company's
+                  management and marketing
+                </p>
+              </div>
+
+              <hr id="hr-style" />
+
+              <div class="timeline-body">
+                <p>
+                  <small class="text-muted"
+                    ><i class="far fa-calendar-alt"></i> 2002 - 2006</small
+                  >
+                </p>
+                <p>
+                  Bachelor's degree, Applied Modern Languages (German/English)
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline-badge success">
+              <i class="fas fa-briefcase"></i>
+            </div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h5 class="timeline-title">IFM Efector SRL</h5>
+              </div>
+
+              <div class="timeline-body">
+                <p>
+                  <small class="text-muted"
+                    ><i class="far fa-calendar-alt"></i> 2016 - present</small
+                  >
+                </p>
+                <p>Asisstant Manager</p>
+
+                <ul>
+                  <li>Managing databases</li>
+                  <li>Administrative and organizational allocated tasks</li>
+                  <li>
+                    Implementing new procedures and administrative systems
+                  </li>
+                  <li>Writing reports or issuing statistics</li>
+                  <li>Organizing internal/external events</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-inverted">
+            <div class="timeline-badge warning">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h5 class="timeline-title">CET Telemarketing SRL</h5>
+              </div>
+
+              <div class="timeline-body">
+                <p>
+                  <small class="text-muted"
+                    ><i class="far fa-calendar-alt"></i> 2012 - 2016</small
+                  >
+                </p>
+                <p>Area Manager</p>
+
+                <ul>
+                  <li>Activity field: customer service for a German company</li>
+                  <li>Increasing the productivity of the employees</li>
+                  <li>Ensuring a pleasant climate and motivating the team</li>
+                  <li>Ensuring the deadline to be maintained</li>
+                </ul>
+
+                <hr id="hr-style" />
+
+                <p>
+                  <small class="text-muted"
+                    ><i class="far fa-calendar-alt"></i> 2007 - 2012</small
+                  >
+                </p>
+                <p>Project Manager</p>
+
+                <ul>
+                  <li>Coordinating a team</li>
+                  <li>
+                    Undertaking actions which sustain the productivity of the
+                    team
+                  </li>
+                  <li>Handling/solving filed complaints</li>
+                  <li>Interacting with customers to ensure satisfaction</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline-badge">
+              <i class="fas fa-stamp"></i>
+            </div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h5 class="timeline-title">CERTIFICATES</h5>
+              </div>
+
+              <div class="timeline-body">
+                <p>
+                  <small class="text-muted"
+                    ><i class="far fa-calendar-alt"></i> 2006</small
+                  >
+                </p>
+                <p><strong>Ministry of Justice, Romania</strong></p>
+                <p>Authorized translator - German and English Languages</p>
+              </div>
+
+              <hr id="hr-style" />
+
+              <div class="timeline-body">
+                <p>
+                  <small class="text-muted"
+                    ><i class="far fa-calendar-alt"></i> 2002</small
+                  >
+                </p>
+                <p>
+                  <strong
+                    >Ministry of Education and Culture, Bonn Germany</strong
+                  >
+                </p>
+                <p>German Language Certificate 2nd Level - C1</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
