@@ -35,7 +35,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 101;
   text-align: right;
   /* box-shadow: 5px 1px 13px rgb(197, 197, 197); */
 }
@@ -157,18 +157,7 @@ hr {
 }
 
 /* ******************** ABOUT PAGE******************* */
-/* #about-content {
-  background-color: var(--transparent-background-color);
-  border-radius: var(--main-radius);
-  color: rgb(231, 230, 230);
-  margin: auto;
-  width: 60%;
-  padding: 50px;
-  font-size: 1.5rem;
-  text-align: justify;
-  align-items: center;
-  justify-content: center;
-} */
+/*check the other css file styletimeline.css*/
 
 /* ******************** PORTFOLIO PAGE ******************* */
 
@@ -258,7 +247,7 @@ hr {
   display: flex;
   flex-direction: column;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin-top: 10%;
 }
@@ -324,7 +313,7 @@ hr {
 
 #footer {
   display: flex;
-  margin: 10px 5px;
+  margin: 10px 5px 0 5px;
   width: 100%;
 }
 
@@ -349,18 +338,20 @@ hr {
 /* ******************** RESPONSIVE FOR SMARTPHONE ******************* */
 
 @media (max-width: 500px) {
-  #main {
-    background-image: none;
-  }
-
-  body {
-    background-color: #c2b8a3;
-  }
-
   .header {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .nav-list {
+    display: flex;
+    padding-left: 0;
+  }
+
+  .nav-list li a {
+    font-size: 12px;
   }
 
   #content {
@@ -382,7 +373,12 @@ hr {
   .sidebar {
     flex-direction: row;
     justify-content: space-around;
-    padding: 74px 10px 20px 20px;
+    padding: 50px 10px 20px 20px;
+  }
+
+  .sidebar p {
+    font-size: 13px;
+    padding-top: 7px;
   }
 
   .profile img,
@@ -405,20 +401,58 @@ hr {
     font-size: 1.5rem;
   }
 
-  #about-content {
-    width: 80%;
-    font-size: 1.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20%;
-    padding: 9%;
+  /* about page */
+  .container {
+    margin-top: 4em;
+    padding: 0 5%;
   }
 
+  .about-me {
+    font-size: 0.6em;
+    margin-bottom: 1.5rem;
+  }
+
+  #timeline {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .timeline-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .timeline-heading h6 {
+    font-size: 0.9rem;
+  }
+
+  small {
+    font-size: 10px;
+  }
+
+  .timeline-body {
+    font-size: 12px;
+  }
+
+  .timeline > li > .timeline-badge {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1em;
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    left: 52%;
+  }
+
+  .timeline > li > .timeline-panel {
+    padding: 12px;
+  }
+
+  /* portfolio page */
   #portfolio-content {
     display: block;
-    padding-top: 20%;
-    padding-bottom: 10%;
+    padding: 6rem 4rem 1rem 4rem;
   }
 
   .portfolio-item {
@@ -426,16 +460,44 @@ hr {
     margin-bottom: 30px;
   }
 
-  #contact-content {
-    padding-top: 20%;
+  .portfolio-btn-to-github {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
   }
+
+  .portfolio-btn-to-github button {
+    font-size: 12px;
+  }
+
+  /* contact page */
+  #contact-content {
+    padding-top: 4%;
+  }
+
   #contact-container {
     display: block;
     width: 90%;
   }
 
-  #form,
-  #footer {
+  #form {
     padding-bottom: 10px;
+  }
+
+  #contact-container h1 {
+    font-size: 1.5em;
+  }
+
+  .footer-item p {
+    font-size: smaller;
+    padding: 0 8px 8px 8px;
+  }
+
+  .footer-item i {
+    font-size: 1.3em;
+    padding: 8px;
   }
 }
