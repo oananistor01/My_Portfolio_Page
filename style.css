@@ -156,6 +156,11 @@ hr {
   color: var(--main-text-color);
 }
 
+.home-portfolio-btn {
+  padding-left: 5rem;
+  padding-bottom: 1rem;
+}
+
 /* ******************** ABOUT PAGE******************* */
 /*check the other css file styletimeline.css*/
 
@@ -392,13 +397,18 @@ hr {
   }
 
   .section {
-    padding: 100px 0;
+    padding: 100px 0 25px 0;
   }
 
   .section h1,
   .section p {
     padding: 0 4rem;
     font-size: 1.5rem;
+  }
+
+  .home-portfolio-btn {
+    padding-left: 3.9rem;
+    padding-bottom: 1rem;
   }
 
   /* about page */
