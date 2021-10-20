@@ -362,9 +362,6 @@ hr {
   #content {
     display: flex;
     flex-direction: column;
-    background-image: url("jpg/background2.jpg");
-    background-repeat: repeat-y;
-    background-size: cover;
   }
 
   .sidebar,
@@ -377,16 +374,22 @@ hr {
 
   .sidebar {
     flex-direction: row;
-    justify-content: space-around;
-    padding: 50px 10px 20px 20px;
+    justify-content: space-between;
+    padding: 50px 10px 0 20px;
   }
 
   .sidebar p {
     font-size: 13px;
-    padding-top: 7px;
+    padding-top: 0;
   }
 
-  .profile img,
+  .profile {
+    width: 50%;
+  }
+  .profile img {
+    width: 25%;
+  }
+
   .social-media p {
     display: none;
   }
@@ -394,10 +397,11 @@ hr {
   .profile h2,
   .social-media {
     padding-top: 0;
+    margin-bottom: 0;
   }
 
   .section {
-    padding: 100px 0 25px 0;
+    padding: 65px 0 25px 0;
   }
 
   .section h1,
@@ -408,12 +412,13 @@ hr {
 
   .home-portfolio-btn {
     padding-left: 3.9rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
+    padding-top: 1rem;
   }
 
   /* about page */
   .container {
-    margin-top: 4em;
+    margin-top: 5em;
     padding: 0 5%;
   }
 
@@ -485,7 +490,8 @@ hr {
 
   /* contact page */
   #contact-content {
-    padding-top: 4%;
+    padding-top: 10%;
+    height: 100vh;
   }
 
   #contact-container {
